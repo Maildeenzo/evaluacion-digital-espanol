@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import { Badge } from "@/components/ui/badge";
 
 // Lista de empresas con sus logos
 const companyLogos = [
@@ -37,21 +38,24 @@ const Companies = () => {
   }, []);
 
   return (
-    <section id="clientes" className="py-16" ref={sectionRef}>
+    <section id="clientes" className="py-12 bg-gradient-to-r from-blue-50 to-indigo-50" ref={sectionRef}>
       <div className="container px-4 mx-auto">
-        <div className="text-center mb-12 reveal-animation">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest text-primary uppercase rounded-full bg-primary/10">
-            Clientes
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Han confiado en nosotros
+        <div className="text-center mb-10 reveal-animation">
+          <Badge className="mb-4 px-4 py-1.5 text-xs font-semibold bg-blue-600 text-white">
+            Clientes Satisfechos
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            Empresas que confían en nosotros
           </h2>
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+            Nos respaldan organizaciones líderes en diversos sectores que valoran nuestro servicio económico y de calidad
+          </p>
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden py-10">
-        <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10"></div>
-        <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10"></div>
+      <div className="relative w-full overflow-hidden py-8">
+        <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
+        <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-blue-50 to-transparent z-10"></div>
         
         {/* Primera fila de logos, moviéndose de derecha a izquierda */}
         <div className="flex logo-slider">
@@ -60,9 +64,8 @@ const Companies = () => {
               key={index} 
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
-              <div className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-full w-full">
-                {/* En una implementación real, aquí se insertarían las imágenes de los logos */}
-                <div className="text-gray-400 font-semibold">{company.name}</div>
+              <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
+                <div className="text-blue-600 font-semibold">{company.name}</div>
               </div>
             </div>
           ))}
@@ -75,12 +78,17 @@ const Companies = () => {
               key={index} 
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
-              <div className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-full w-full">
-                {/* En una implementación real, aquí se insertarían las imágenes de los logos */}
-                <div className="text-gray-400 font-semibold">{company.name}</div>
+              <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
+                <div className="text-blue-600 font-semibold">{company.name}</div>
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      
+      <div className="container px-4 mx-auto text-center mt-8">
+        <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full font-medium text-sm">
+          ¡Prueba nuestro servicio económico y de alta calidad!
         </div>
       </div>
     </section>

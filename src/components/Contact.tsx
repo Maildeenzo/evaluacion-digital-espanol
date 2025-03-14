@@ -1,7 +1,8 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
+import { Button } from '@/components/ui/button';
 
 type FormData = {
   name: string;
@@ -72,6 +73,17 @@ const Contact = () => {
     }, 1500);
   };
 
+  const handleWhatsAppClick = () => {
+    // Número de WhatsApp de la empresa (ejemplo)
+    const phoneNumber = "+56912345678";
+    // Mensaje predeterminado
+    const message = "Hola, me gustaría obtener más información sobre los servicios de EvaluaPro.";
+    // URL de WhatsApp con el número y mensaje
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    // Abrir WhatsApp en una nueva pestaña
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="contacto" className="section-padding bg-secondary" ref={sectionRef}>
       <div className="container px-4 mx-auto">
@@ -121,6 +133,20 @@ const Contact = () => {
                     <p className="text-muted-foreground">Av. Providencia 1234, Oficina 567, Providencia, Santiago</p>
                   </div>
                 </div>
+              </div>
+              
+              {/* Botón de WhatsApp */}
+              <div className="mt-8">
+                <Button
+                  onClick={handleWhatsAppClick}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white font-medium flex items-center justify-center gap-2 py-6"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  <span>Contáctanos por WhatsApp</span>
+                </Button>
+                <p className="text-xs text-muted-foreground mt-2 text-center">
+                  Respuesta rápida y económica por WhatsApp
+                </p>
               </div>
             </div>
             

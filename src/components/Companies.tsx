@@ -87,8 +87,8 @@ const Companies = () => {
       </div>
       
       <div className="container px-4 mx-auto text-center mt-8">
-        <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full font-medium text-sm">
-          ¡Prueba nuestro servicio económico y de alta calidad!
+        <div className="inline-block px-6 py-3 bg-orange-500 text-white rounded-full font-medium text-base shadow-lg transform hover:scale-105 transition-transform">
+          ¡Servicio de alta calidad a precio inmejorable!
         </div>
       </div>
     </section>

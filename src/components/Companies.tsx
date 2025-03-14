@@ -9,12 +9,6 @@ const companyLogos = [
   { name: 'Oncovida', alt: 'Logo de Oncovida' },
   { name: 'MSC', alt: 'Logo de MSC' },
   { name: 'Sitrans', alt: 'Logo de Sitrans' },
-  { name: 'Microsoft', alt: 'Logo de Microsoft' },
-  { name: 'Google', alt: 'Logo de Google' },
-  { name: 'Amazon', alt: 'Logo de Amazon' },
-  { name: 'IBM', alt: 'Logo de IBM' },
-  { name: 'Oracle', alt: 'Logo de Oracle' },
-  { name: 'Samsung', alt: 'Logo de Samsung' },
 ];
 
 // Duplicamos los logos para crear un efecto infinito

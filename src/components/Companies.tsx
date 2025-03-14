@@ -1,20 +1,20 @@
 
 import { useEffect, useRef } from 'react';
 
-// Estos son placeholders. En una implementación real, importarías las imágenes de los logos reales
+// Lista de empresas con sus logos
 const companyLogos = [
+  { name: 'Concha y Toro', alt: 'Logo de Concha y Toro' },
+  { name: 'Movistar', alt: 'Logo de Movistar' },
+  { name: 'DUOC', alt: 'Logo de DUOC' },
+  { name: 'Oncovida', alt: 'Logo de Oncovida' },
+  { name: 'MSC', alt: 'Logo de MSC' },
+  { name: 'Sitrans', alt: 'Logo de Sitrans' },
   { name: 'Microsoft', alt: 'Logo de Microsoft' },
   { name: 'Google', alt: 'Logo de Google' },
   { name: 'Amazon', alt: 'Logo de Amazon' },
   { name: 'IBM', alt: 'Logo de IBM' },
   { name: 'Oracle', alt: 'Logo de Oracle' },
   { name: 'Samsung', alt: 'Logo de Samsung' },
-  { name: 'Sony', alt: 'Logo de Sony' },
-  { name: 'Telefónica', alt: 'Logo de Telefónica' },
-  { name: 'Banco Santander', alt: 'Logo de Banco Santander' },
-  { name: 'BBVA', alt: 'Logo de BBVA' },
-  { name: 'Falabella', alt: 'Logo de Falabella' },
-  { name: 'Latam', alt: 'Logo de Latam' },
 ];
 
 // Duplicamos los logos para crear un efecto infinito
@@ -67,7 +67,7 @@ const Companies = () => {
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
               <div className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-full w-full">
-                {/* En una implementación real, usarías imágenes reales */}
+                {/* En una implementación real, aquí se insertarían las imágenes de los logos */}
                 <div className="text-gray-400 font-semibold">{company.name}</div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Companies = () => {
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
               <div className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-full w-full">
-                {/* En una implementación real, usarías imágenes reales */}
+                {/* En una implementación real, aquí se insertarían las imágenes de los logos */}
                 <div className="text-gray-400 font-semibold">{company.name}</div>
               </div>
             </div>

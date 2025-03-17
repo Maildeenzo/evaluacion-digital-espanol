@@ -4,12 +4,36 @@ import { Badge } from "@/components/ui/badge";
 
 // Lista de empresas con sus logos
 const companyLogos = [
-  { name: 'Concha y Toro', alt: 'Logo de Concha y Toro' },
-  { name: 'Movistar', alt: 'Logo de Movistar' },
-  { name: 'DUOC', alt: 'Logo de DUOC' },
-  { name: 'Oncovida', alt: 'Logo de Oncovida' },
-  { name: 'MSC', alt: 'Logo de MSC' },
-  { name: 'Sitrans', alt: 'Logo de Sitrans' },
+  { 
+    name: 'Concha y Toro', 
+    alt: 'Logo de Concha y Toro',
+    logo: '/logos/concha-y-toro.png' 
+  },
+  { 
+    name: 'Movistar', 
+    alt: 'Logo de Movistar',
+    logo: '/logos/movistar.png' 
+  },
+  { 
+    name: 'DUOC', 
+    alt: 'Logo de DUOC',
+    logo: '/logos/duoc.png' 
+  },
+  { 
+    name: 'Oncovida', 
+    alt: 'Logo de Oncovida',
+    logo: '/logos/oncovida.png' 
+  },
+  { 
+    name: 'MSC', 
+    alt: 'Logo de MSC',
+    logo: '/logos/msc.png' 
+  },
+  { 
+    name: 'Sitrans', 
+    alt: 'Logo de Sitrans',
+    logo: '/logos/sitrans.png' 
+  },
 ];
 
 // Duplicamos los logos para crear un efecto infinito
@@ -65,7 +89,15 @@ const Companies = () => {
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
               <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
-                <div className="text-blue-600 font-semibold">{company.name}</div>
+                {company.logo ? (
+                  <img 
+                    src={company.logo} 
+                    alt={company.alt} 
+                    className="max-h-10 max-w-full object-contain" 
+                  />
+                ) : (
+                  <div className="text-blue-600 font-semibold">{company.name}</div>
+                )}
               </div>
             </div>
           ))}
@@ -79,7 +111,15 @@ const Companies = () => {
               className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
             >
               <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
-                <div className="text-blue-600 font-semibold">{company.name}</div>
+                {company.logo ? (
+                  <img 
+                    src={company.logo} 
+                    alt={company.alt} 
+                    className="max-h-10 max-w-full object-contain" 
+                  />
+                ) : (
+                  <div className="text-blue-600 font-semibold">{company.name}</div>
+                )}
               </div>
             </div>
           ))}

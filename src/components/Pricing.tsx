@@ -1,4 +1,3 @@
-
 import { Check, HelpCircle } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
@@ -7,45 +6,44 @@ const plans = [
   {
     name: 'Básico',
     description: 'Ideal para pequeñas empresas y contrataciones puntuales',
-    price: '45.000',
+    price: '55.000',
     features: [
       'Evaluación de competencias básicas',
       'Informe estandarizado',
       'Test psicométrico simple',
       'Entrega en 3 días hábiles',
-      'Sin entrevista personal',
     ],
     cta: 'Elegir plan Básico',
     popular: false,
   },
   {
     name: 'Premium',
-    description: 'Solución completa para procesos de selección rigurosos',
-    price: '85.000',
+    description: 'Evaluaciones psicolaborales precisas y accionables',
+    price: '75.000',
     features: [
-      'Evaluación completa de competencias',
-      'Informe detallado con recomendaciones',
-      'Batería completa de test psicométricos',
-      'Entrevista por videoconferencia',
-      'Entrega en 2 días hábiles',
-      'Seguimiento post-contratación',
+      'Resumen ejecutivo detallado',
+      'Evaluación de competencias conductuales',
+      'Análisis de inteligencia emocional',
+      'Evaluación de adaptabilidad y resiliencia',
+      'Evaluación de fit cultural',
+      'Entrega en 24 horas',
     ],
     cta: 'Elegir plan Premium',
     popular: true,
   },
   {
-    name: 'Empresarial',
-    description: 'Para procesos de selección masivos y evaluaciones ejecutivas',
-    price: 'Personalizado',
+    name: 'AM-PM',
+    description: 'Para procesos urgentes con evaluación y resultados el mismo día',
+    price: '99.000',
     features: [
-      'Evaluación adaptada a necesidades específicas',
-      'Informes personalizados por cargo',
-      'Entrevistas presenciales o virtuales',
-      'Assessment Center para equipos',
-      'Asesoría continua en el proceso',
-      'Seguimiento mensual',
+      'Disponible lunes y viernes',
+      'Evaluación en la mañana',
+      'Entrega de informe en la tarde',
+      'Incluye todas las características del plan Premium',
+      'Análisis en tiempo real',
+      'Resultados accionables inmediatos',
     ],
-    cta: 'Solicitar cotización',
+    cta: 'Elegir plan AM-PM',
     popular: false,
   },
 ];
@@ -99,7 +97,7 @@ const Pricing = () => {
             Planes adaptados a tus necesidades
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ofrecemos diferentes opciones de evaluación según el nivel de profundidad y complejidad que requieras.
+            Ofrecemos diferentes opciones de evaluación según el nivel de profundidad y urgencia que requieras.
           </p>
         </div>
 
@@ -127,12 +125,9 @@ const Pricing = () => {
               </p>
               <div className="mb-6">
                 <span className="text-3xl font-bold">
-                  {plan.price === 'Personalizado' ? '' : '$'}
-                  {plan.price}
+                  ${plan.price}
                 </span>
-                {plan.price !== 'Personalizado' && (
-                  <span className="text-muted-foreground"> CLP + IVA</span>
-                )}
+                <span className="text-muted-foreground"> CLP + IVA</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (

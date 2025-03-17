@@ -46,14 +46,14 @@ const Hero = () => {
             ref={(el) => (elementsRef.current[1] = el)} 
             className="reveal-animation text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            Descubre el potencial de tus candidatos con nuestras evaluaciones personalizadas
+            Contrata mejor, más rápido y sin gastar de más
           </h1>
           
           <p 
             ref={(el) => (elementsRef.current[2] = el)} 
             className="reveal-animation text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"
           >
-            Ofrecemos evaluaciones precisas y detalladas que te ayudarán a tomar las mejores decisiones en tus procesos de selección de personal.
+            Porque contratar bien es vital. Te ofrecemos la solución inteligente y accesible para PYMES que buscan talento sin complicaciones
           </p>
           
           <div 

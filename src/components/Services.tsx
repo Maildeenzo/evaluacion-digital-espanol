@@ -2,63 +2,7 @@
 import { Check, FileText, Brain, Briefcase, Target, Users, Rocket, Zap, Clock, Calendar, Send } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
-const services = [
-  {
-    icon: <FileText className="h-10 w-10 text-primary" />,
-    title: 'Evaluación Completa',
-    description: 'Análisis exhaustivo de competencias, personalidad y aptitudes para diversos cargos y niveles jerárquicos.',
-    features: [
-      'Informes detallados',
-      'Evaluación de competencias técnicas y blandas',
-      'Análisis de personalidad',
-      'Recomendaciones específicas',
-    ],
-  },
-  {
-    icon: <Brain className="h-10 w-10 text-primary" />,
-    title: 'Test Psicométricos',
-    description: 'Aplicación de pruebas validadas internacionalmente para medir habilidades cognitivas y rasgos de personalidad.',
-    features: [
-      'Pruebas estandarizadas',
-      'Medición de aptitudes cognitivas',
-      'Evaluación de rasgos de personalidad',
-      'Análisis comparativo con perfiles ideales',
-    ],
-  },
-  {
-    icon: <Briefcase className="h-10 w-10 text-primary" />,
-    title: 'Assessment Center',
-    description: 'Metodología de evaluación grupal que permite observar comportamientos en situaciones simuladas de trabajo.',
-    features: [
-      'Dinámicas grupales',
-      'Casos de estudio',
-      'Ejercicios de simulación',
-      'Evaluación objetiva por competencias',
-    ],
-  },
-  {
-    icon: <Target className="h-10 w-10 text-primary" />,
-    title: 'Evaluación Ejecutiva',
-    description: 'Proceso especializado para la evaluación de posiciones directivas y gerenciales.',
-    features: [
-      'Evaluación de liderazgo',
-      'Análisis de potencial directivo',
-      'Evaluación de capacidad estratégica',
-      'Entrevistas en profundidad',
-    ],
-  },
-  {
-    icon: <Users className="h-10 w-10 text-primary" />,
-    title: 'Clima Organizacional',
-    description: 'Evaluación del ambiente laboral y la satisfacción de los colaboradores en la organización.',
-    features: [
-      'Diagnóstico de clima laboral',
-      'Medición de satisfacción',
-      'Análisis de relaciones interpersonales',
-      'Recomendaciones de mejora',
-    ],
-  },
-];
+// Removing the services array that contained the 5 cards
 
 const Services = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -218,28 +162,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              ref={(el) => (elementsRef.current[index] = el)}
-              className="reveal-animation bg-white rounded-2xl shadow-sm p-8 border border-border card-hover"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="mb-6">{service.icon}</div>
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-              <p className="text-muted-foreground mb-6">{service.description}</p>
-              <ul className="space-y-2">
-                {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-start">
-                    <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
-                    <span className="text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        {/* Removed the grid with the 5 service cards */}
       </div>
     </section>
   );

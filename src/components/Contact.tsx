@@ -75,7 +75,7 @@ const Contact = () => {
 
   const handleWhatsAppClick = () => {
     // Número de WhatsApp de la empresa (ejemplo)
-    const phoneNumber = "+56912345678";
+    const phoneNumber = "+56951982970";
     // Mensaje predeterminado
     const message = "Hola, me gustaría obtener más información sobre los servicios de EvaluaPro.";
     // URL de WhatsApp con el número y mensaje

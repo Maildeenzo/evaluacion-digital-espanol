@@ -2,8 +2,6 @@
 import { Check, FileText, Brain, Briefcase, Target, Users, Rocket, Zap, Clock, Calendar, Send } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
-// Removing the services array that contained the 5 cards
-
 const Services = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -46,6 +44,154 @@ const Services = () => {
           <p className="text-lg text-muted-foreground">
             Ofrecemos soluciones personalizadas para evaluar a tus candidatos y colaboradores, adaptándonos a los requerimientos específicos de tu empresa.
           </p>
+        </div>
+
+        {/* Planes de servicio que coinciden con los precios */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {/* Plan Básico */}
+          <div 
+            className="reveal-animation bg-white rounded-2xl p-8 border border-border shadow-sm transition-all duration-300"
+            ref={(el) => (elementsRef.current[0] = el)}
+            style={{ animationDelay: '0ms' }}
+          >
+            <h3 className="text-2xl font-bold mb-2">Plan Básico</h3>
+            <p className="text-muted-foreground mb-6">
+              Ideal para pequeñas empresas y contrataciones puntuales
+            </p>
+            <div className="mb-6">
+              <span className="text-3xl font-bold">
+                $55.000
+              </span>
+              <span className="text-muted-foreground"> CLP + IVA</span>
+            </div>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Evaluación de competencias básicas</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Informe estandarizado</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Test psicométrico simple</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Entrega en 3 días hábiles</span>
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              className="w-full flex justify-center items-center h-12 font-medium rounded-lg transition-colors bg-secondary text-secondary-foreground hover:bg-secondary/90"
+            >
+              Solicitar evaluación básica
+            </a>
+          </div>
+
+          {/* Plan Premium */}
+          <div 
+            className="reveal-animation bg-white rounded-2xl p-8 border border-primary shadow-lg md:-translate-y-4 transition-all duration-300"
+            ref={(el) => (elementsRef.current[1] = el)}
+            style={{ animationDelay: '100ms' }}
+          >
+            <div className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
+              Más popular
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Plan Premium</h3>
+            <p className="text-muted-foreground mb-6">
+              Evaluaciones psicolaborales precisas y accionables
+            </p>
+            <div className="mb-6">
+              <span className="text-3xl font-bold">
+                $75.000
+              </span>
+              <span className="text-muted-foreground"> CLP + IVA</span>
+            </div>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Resumen ejecutivo detallado</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Evaluación de competencias conductuales</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Análisis de inteligencia emocional</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Evaluación de adaptabilidad y resiliencia</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Evaluación de fit cultural</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Entrega en 24 horas</span>
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              className="w-full flex justify-center items-center h-12 font-medium rounded-lg transition-colors bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              Solicitar evaluación premium
+            </a>
+          </div>
+
+          {/* Plan AM-PM */}
+          <div 
+            className="reveal-animation bg-white rounded-2xl p-8 border border-border shadow-sm transition-all duration-300"
+            ref={(el) => (elementsRef.current[2] = el)}
+            style={{ animationDelay: '200ms' }}
+          >
+            <h3 className="text-2xl font-bold mb-2">Plan AM-PM</h3>
+            <p className="text-muted-foreground mb-6">
+              Para procesos urgentes con evaluación y resultados el mismo día
+            </p>
+            <div className="mb-6">
+              <span className="text-3xl font-bold">
+                $99.000
+              </span>
+              <span className="text-muted-foreground"> CLP + IVA</span>
+            </div>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Disponible lunes y viernes</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Evaluación en la mañana</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Entrega de informe en la tarde</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Incluye todas las características del plan Premium</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Análisis en tiempo real</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-primary shrink-0 mr-2" />
+                <span>Resultados accionables inmediatos</span>
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              className="w-full flex justify-center items-center h-12 font-medium rounded-lg transition-colors bg-secondary text-secondary-foreground hover:bg-secondary/90"
+            >
+              Solicitar evaluación AM-PM
+            </a>
+          </div>
         </div>
 
         {/* Descripción detallada del servicio */}
@@ -112,19 +258,26 @@ const Services = () => {
               <Calendar className="h-5 w-5 mr-2 text-orange-500" />
               Opciones de Entrega
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-start p-4 rounded-lg bg-blue-50 border border-blue-100">
-                <Rocket className="h-8 w-8 text-blue-600 mr-3 shrink-0" />
+                <Clock className="h-8 w-8 text-blue-600 mr-3 shrink-0" />
                 <div>
-                  <h4 className="font-bold">Versión Estándar</h4>
-                  <p>Informe entregado en <strong className="text-blue-700">24 horas.</strong></p>
+                  <h4 className="font-bold">Plan Básico</h4>
+                  <p>Informe entregado en <strong className="text-blue-700">3 días hábiles.</strong></p>
+                </div>
+              </div>
+              <div className="flex items-start p-4 rounded-lg bg-indigo-50 border border-indigo-100">
+                <Rocket className="h-8 w-8 text-indigo-600 mr-3 shrink-0" />
+                <div>
+                  <h4 className="font-bold">Plan Premium</h4>
+                  <p>Informe entregado en <strong className="text-indigo-700">24 horas.</strong></p>
                 </div>
               </div>
               <div className="flex items-start p-4 rounded-lg bg-orange-50 border border-orange-100">
                 <Zap className="h-8 w-8 text-orange-500 mr-3 shrink-0" />
                 <div>
-                  <h4 className="font-bold">Versión AM-PM</h4>
-                  <p>Disponible <strong className="text-orange-600">lunes y viernes</strong> para procesos urgentes. Evaluamos en la mañana y entregamos el informe en la tarde.</p>
+                  <h4 className="font-bold">Plan AM-PM</h4>
+                  <p>Disponible <strong className="text-orange-600">lunes y viernes</strong>. Evaluamos en la mañana y entregamos en la tarde.</p>
                 </div>
               </div>
             </div>
@@ -161,8 +314,6 @@ const Services = () => {
             </a>
           </div>
         </div>
-
-        {/* Removed the grid with the 5 service cards */}
       </div>
     </section>
   );

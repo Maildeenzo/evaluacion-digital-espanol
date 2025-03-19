@@ -69,7 +69,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">contacto@evalua-pro.cl</p>
+                    <p className="text-muted-foreground">enzobrugueras@gmail.com</p>
                   </div>
                 </div>
                 
@@ -79,17 +79,13 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Teléfono</h3>
-                    <p className="text-muted-foreground">+56 2 2123 4567</p>
+                    <p className="text-muted-foreground">+56951982970</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
                     <MapPin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-1">Dirección</h3>
-                    <p className="text-muted-foreground">Av. Providencia 1234, Oficina 567, Providencia, Santiago</p>
                   </div>
                 </div>
               </div>

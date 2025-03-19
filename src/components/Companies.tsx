@@ -37,7 +37,7 @@ const companyLogos = [
 ];
 
 // Duplicamos los logos para crear un efecto infinito
-const allLogos = [...companyLogos, ...companyLogos];
+const allLogos = [...companyLogos, ...companyLogos, ...companyLogos];
 
 const Companies = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -81,41 +81,19 @@ const Companies = () => {
         <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
         <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-blue-50 to-transparent z-10"></div>
         
-        {/* Primera fila de logos, moviéndose de derecha a izquierda */}
+        {/* Única franja de logos dinámica */}
         <div className="flex logo-slider">
-          {allLogos.slice(0, allLogos.length / 2).map((company, index) => (
+          {allLogos.map((company, index) => (
             <div 
               key={index} 
-              className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
+              className="mx-6 flex items-center justify-center h-20 min-w-[180px]"
             >
               <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
                 {company.logo ? (
                   <img 
                     src={company.logo} 
                     alt={company.alt} 
-                    className="max-h-10 max-w-full object-contain" 
-                  />
-                ) : (
-                  <div className="text-blue-600 font-semibold">{company.name}</div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Segunda fila de logos, moviéndose de izquierda a derecha */}
-        <div className="flex logo-slider-reverse mt-8">
-          {allLogos.slice(allLogos.length / 2).map((company, index) => (
-            <div 
-              key={index} 
-              className="mx-8 flex items-center justify-center h-16 min-w-[160px]"
-            >
-              <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100 flex items-center justify-center h-full w-full transform transition-transform hover:scale-105">
-                {company.logo ? (
-                  <img 
-                    src={company.logo} 
-                    alt={company.alt} 
-                    className="max-h-10 max-w-full object-contain" 
+                    className="max-h-12 max-w-full object-contain" 
                   />
                 ) : (
                   <div className="text-blue-600 font-semibold">{company.name}</div>

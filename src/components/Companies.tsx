@@ -12,27 +12,27 @@ const companyLogos = [
   { 
     name: 'Movistar', 
     alt: 'Logo de Movistar',
-    logo: '../../public//logos/movistar.png' 
+    logo: '../../public/logos/Movistar-logo.jpg' 
   },
   { 
     name: 'DUOC', 
     alt: 'Logo de DUOC',
-    logo: '../../public//logos/duoc.png' 
+    logo: '../../public/logos/Logo_DuocUC.svg.png' 
   },
   { 
     name: 'Oncovida', 
     alt: 'Logo de Oncovida',
-    logo: '../../public//logos/oncovida.png' 
+    logo: '../../public/logos/Oncovida.png' 
   },
   { 
     name: 'MSC', 
     alt: 'Logo de MSC',
-    logo: '../../public//logos/msc.png' 
+    logo: '../../public/logos/msc-360.jpg' 
   },
   { 
     name: 'Sitrans', 
     alt: 'Logo de Sitrans',
-    logo: '../../public//logos/sitrans.png' 
+    logo: '../../public/logos/sitrans.jpg' 
   },
 ];
 

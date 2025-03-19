@@ -7,32 +7,32 @@ const companyLogos = [
   { 
     name: 'Concha y Toro', 
     alt: 'Logo de Concha y Toro',
-    logo: '../../public/logos/concha-y-toro.png' 
+    logo: '/../../public/logos/concha-y-toro.png' 
   },
   { 
     name: 'Movistar', 
     alt: 'Logo de Movistar',
-    logo: '../../public/logos/Movistar-logo.jpg' 
+    logo: '/../../public/logos/Movistar-logo.jpg' 
   },
   { 
     name: 'DUOC', 
     alt: 'Logo de DUOC',
-    logo: '../../public/logos/Logo_DuocUC.svg.png' 
+    logo: '/../../public/logos/Logo_DuocUC.svg.png' 
   },
   { 
     name: 'Oncovida', 
     alt: 'Logo de Oncovida',
-    logo: '../../public/logos/Oncovida.png' 
+    logo: '/../../public/logos/Oncovida.png' 
   },
   { 
     name: 'MSC', 
     alt: 'Logo de MSC',
-    logo: '../../public/logos/msc-360.jpg' 
+    logo: '/../../public/logos/msc-360.jpg' 
   },
   { 
     name: 'Sitrans', 
     alt: 'Logo de Sitrans',
-    logo: '../../public/logos/sitrans.jpg' 
+    logo: '/../../public/logos/sitrans.jpg' 
   },
 ];
 

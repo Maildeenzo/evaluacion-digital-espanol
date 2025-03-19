@@ -106,17 +106,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/80">contacto@evalua-pro.cl</span>
+                <span className="text-primary-foreground/80">enzobrugueras@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/80">+56 2 2123 4567</span>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/80">
-                  Av. Providencia 1234, Oficina 567, Providencia, Santiago
-                </span>
+                <span className="text-primary-foreground/80">+56951982970</span>
               </li>
             </ul>
           </div>

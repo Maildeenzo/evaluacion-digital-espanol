@@ -7,7 +7,7 @@ const companyLogos = [
   { 
     name: 'Concha y Toro', 
     alt: 'Logo de Concha y Toro',
-    logo: '/../../public/logos/concha-y-toro.png' 
+    logo: '/../../public/logos/concha_toro.jpg' 
   },
   { 
     name: 'Movistar', 

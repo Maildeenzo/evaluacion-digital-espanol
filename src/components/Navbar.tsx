@@ -26,7 +26,11 @@ const Navbar = () => {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <a href="#" className="text-2xl font-display font-semibold">
-            EvaluaPro
+            <img 
+              src="/logos/Evaluapro.png" 
+              alt="EvaluaPro" 
+              className="h-10 object-contain" 
+            />
           </a>
           
           <nav className="hidden md:block">

@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -80,12 +80,6 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Teléfono</h3>
                     <p className="text-muted-foreground">+56951982970</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
-                    <MapPin className="h-5 w-5 text-primary" />
                   </div>
                 </div>
               </div>

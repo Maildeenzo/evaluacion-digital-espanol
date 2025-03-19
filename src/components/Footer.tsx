@@ -50,31 +50,21 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-6">Servicios</h3>
+            <h3 className="text-lg font-semibold mb-6">Planes</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#servicios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Evaluación Completa
+                <a href="#precios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Plan Básico
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Test Psicométricos
+                <a href="#precios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Plan Premium
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Assessment Center
-                </a>
-              </li>
-              <li>
-                <a href="#servicios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Evaluación Ejecutiva
-                </a>
-              </li>
-              <li>
-                <a href="#servicios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Clima Organizacional
+                <a href="#precios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Plan AM-PM
                 </a>
               </li>
             </ul>
